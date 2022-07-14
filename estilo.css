@@ -5,7 +5,7 @@
     
 }
 body{
-    background-color: rgb(206, 162, 246);
+    background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
@@ -13,7 +13,8 @@ nav{
     display: flex;
     margin: 1rem;
     height: 104px;
-    justify-content:space-around 
+    justify-content:space-around;
+    border: rgb(161, 104, 161) 1px solid;
     
 
 }
@@ -27,35 +28,133 @@ nav{
     list-style: none;
     justify-content: space-around ; 
     width: 70vw;
-    align-items: flex-end
+    align-items: flex-end;
+   
 
 }
-.menu_link{ 
-    text-decoration: none;
-    color: white;}
+
+    
      
 main{
-        max-width: 1300px;
-        margin: 0 auto;
-        margin-top: 3rem;
+        max-width: 1450px;
+        margin: 5rem;
+        margin-top: 1rem;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1.1em;
+        font-size: 1em
+    } 
+
+    .menu_link{ 
+      text-decoration: none;
+      color: white;}
+  
+      .luken{
+        grid-area: luken;
+      }
+      .major{
+        grid-area: major;
+      }
+      .nqz{
+        grid-area: nqz;
+      }
+
+    .container{
+     
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas: "major nqz"
+                             " luken nqz"
+                              "luken victoria";
+      grid-row-gap: 5px;
+      grid-column-gap: 10px; 
+      justify-items: end;
     }
-    
+    .major img{
+      width: 500px;}
+  .major iframe{
+      width: 400px;
+      height: 300px;}
+    .img9z{
+      grid-area: img9z;
+     }
+   .vid9z{
+    grid-area: vid9z;
+     }
+    .noticia1{ 
+  grid-area: noticia1; }
     
     .major{
+      background-color: rgb(252, 252, 252);
+      border: rgb(161, 104, 161) 1px solid;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-        align-items: center
-      }
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr  ;
+        grid-template-areas: "vid9z img9z"
+                              "noticia1 noticia1";
+        grid-row-gap: 10px;
+       grid-column-gap: 10px; 
+       height: 400px;
+       width: 950px; 
+       padding: 1rem
+      
+           
+     }
+     .luken img{width: 250px;
+                 height: 300px;}
+            .noticia2{
+                grid-area: noticia2;
+            }
+            .imgluken1{
+                grid-area: imgluken1 ;
+            }
+            .imgluken2{
+                grid-area: imgluken2;
+            }   
       .luken{
+        background-color: rgb(249, 249, 249);
+        border: rgb(161, 104, 161) 1px solid;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr ;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 3rem; }
+        grid-template-areas: "noticia2 noticia2"
+                              "imgluken1 imgluken2";
+         margin-top: 3rem;
+       grid-row-gap: 10px;
+       grid-column-gap: 10px; 
+       height: 400px;
+       width: 950px;
+       justify-items: center ;
+       padding: 1rem
+       }
+       .imgnqz{
+        width:250px ;
+        grid-area: imgnqz;
+       }
+       .noticia3{
+        grid-area: noticia3;
+       } 
+
+       .nqz{ background-color: rgb(252, 252, 252);
+        border: rgb(161, 104, 161) 1px solid;
+          display: grid;
+          grid-template-columns: 1fr ;
+          grid-template-rows: 1fr  ;
+          grid-template-areas:"noticia3 "
+                               "imgnqz"
+                              ;
+          grid-row-gap: 10px;
+         grid-column-gap: 10px; 
+         height: 400px;
+         width: 350px; 
+         justify-items: center ;
+         padding: 1rem;
+         }
+         .victoria{
+          height:380px ;
+          width: 350px;
+          border: rgb(161, 104, 161) 1px solid;
+         }
+       
 
 
         /* MOBILE */
@@ -70,17 +169,37 @@ main{
                 justify-content: space-around ; 
                 align-items: center;} 
 
-                main{
-                   margin: 2rem;
-                    margin-top: 3rem;
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: 0.80em;
-                     }
-                 .major img{
-                    width: 200px;}
+
+
+               .luken{
+                      grid-area: luken;
+                    }
+                    .major{
+                      grid-area: major;
+                    }
+                    .nqz{
+                      grid-area: nqz;
+                    }
+                    .victoria{
+                      width: 205px;
+                      height:270px ;
+                      grid-template-areas: victoria;
+                    }
+              
+                  .container{
+                    margin-top: 0%;
+              
+                    display: grid;
+                      grid-template-columns: 1fr 1fr;
+                      grid-template-rows: 1fr ;
+                      grid-template-areas: "major major"
+                                          "victoria nqz"
+                                          "luken luken" }
+         .major img{
+                    width: 180px;}
                 .major iframe{
-                    width: 210px;
-                    height: 125px;
+                    width: 180px;
+                    height: 110px;
                 }
                 .img9z{
                     grid-area: img9z;
@@ -92,18 +211,21 @@ main{
                 grid-area: noticia1; }
             
                 .major{
-            
-                display:grid;
-                grid-template-columns: 2fr 2fr;
-                grid-template-rows: 20% ;
+                 
+                  display:grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 50% ;
                  grid-template-areas: 
-                    "img9z vid9z"
-                    "noticia1 noticia1";
+                               "img9z vid9z"
+                               "noticia1 noticia1";
                     grid-row-gap: 5px;
-                    grid-column-gap: 10px;
+                    grid-column-gap: 2px;
+                    height: 250px;
+                    width: 425px; 
                 
                 }
-            .luken img{width: 200px;}
+            .luken img{width: 120px;
+                       height: 130px;}
             .noticia2{
                 grid-area: noticia2;
             }
@@ -116,26 +238,50 @@ main{
 
             .luken{
                 display: grid;
-                grid-template-columns: 2fr 2fr;
-                grid-template-rows: 20%;
-                grid-template-areas: "noticia2 noticia2"
-                "imgluken1 imgluken2";
-                grid-row-gap: 5px;
-                grid-column-gap: 10px;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 50%;
+                grid-template-areas:"noticia2 noticia2"
+                                   "imgluken1 imgluken2";
+                
+                height: 300px;
+                width: 425px; 
+                justify-items: left;
+                margin-top: 0rem;
+
+                
                  }
-                 .footer{    color: aliceblue;
+                 .imgnqz{
+                  width:140px ;
+                  grid-area: imgnqz;
+                 }
+                 .nqz{
+                  height: 270px;
+                  width: 200px; 
+                  justify-items: center ;
+                  padding: 1rem;
+                 }
+
+
+
+
+                 .footer{    
+                   color: aliceblue;
                     background-color:black;
                     text-align: center;
                     list-style: none;
                     display: flex;
-                    flex-direction: column;
+                    justify-content: space-around;
                     font-size: 0.8em;
+                   
                     
                  }
             
          }
 
          /* INFORMACION */
+
+
+
 
          @media only screen and (max-width: 480px){
             .menu{
@@ -151,7 +297,9 @@ main{
                    margin: 2rem;
                     margin-top: 3rem;
                     font-family: 'Times New Roman', Times, serif;
-                    font-size: 0.80em;    }
+                    font-size: 0.80em; 
+
+                     }
 
 
       .fran img{
@@ -179,6 +327,8 @@ main{
         grid-area: imgfran2;
       }
       .fran{
+        background-color: rgb(252, 252, 252);
+        border: rgb(161, 104, 161) 1px solid;
         display: grid;
         grid-template-areas: "imgfran1 imgfran2";
         align-items: center; 
@@ -197,12 +347,13 @@ main{
 
     
     footer{
+    border: rgb(161, 104, 161) 1px solid;
     color: aliceblue;
     background-color:black;
     padding: 2rem;
-    margin: 0rem;
+    margin: 0.5rem;
     text-align: center;
     list-style: none;
     display: flex;
-    flex-direction: column;
-    }
+    justify-content: space-around;
+  }
