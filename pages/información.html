@@ -13,20 +13,30 @@
   />
 </head>
 <body>   
-    <header>
-        <nav>
-            <picture class="animate__animated animate__fadeInDownBig">
-                <img src="../imagenes/9z.png" height="100" alt=""> 
-               </picture>
-               <ul class="menu"> 
-                <li class="menu_item"><a href="../index.html" class="menu_link">Inicio</a></li>
-                <li class="menu_item"><a href="jugadores.html" class="menu_link">Jugadores</a></li>
-                <li class="menu_item"><a href="highlights.html" class="menu_link">Highlights</a></li>
-                <li class="menu_item"><a href="información.html" class="menu_link">Información</a></li>
-                <li class="menu_item"><a href="redes.html" class="menu_link">Redes</a></li>
-            </ul>
+    <header><nav class="navbar navbar-expand-lg  navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> <img src="../imagenes/9z.png" width="100px" height="100px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+             
+              <li class="nav-item">
+                 <a class="nav-link active" aria-current="page"href="../pages/jugadores.html" href="#">Jugadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"href="../pages/highlights.html" href="#">Highlights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"href="../pages/información.html"  aria-current="page" href="#">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"href="../pages/redes.html" aria-current="page" href="#">Redes</a>
+              </li>
+
+</nav>
     
-        </nav>
     </header>
     <main>
         <article class="articulofran"> 
@@ -35,12 +45,24 @@
         
          <p class="informacion"> <h2 class="titulo2"> CREACIÓN </h2>El motivo de la creación es debido a que el streamer se encontraba en la Relegación de la Copa Latinoamérica Sur Apertura 2018, alentando con euforia por el conjunto de League of Legends de la Coscu Army. En este enfrentamiento, Francisco Postiglione se encontraba en la tribuna con la afición de la organización, lo cuál lo llevó a la emoción y le despertó las ganas en él de formar un equipo propio. 9z comenzó como un proyecto de un equipo de Fortnite, conformado por jugadores que eran amigos del dueño de la organización y que se destacaban por su buen juego, que era transmitido en directos de twitch.</p>
        
-    </article>
-    <article class="fran">
-        <img class="imgfran1" src="../imagenes/frankkaster_1440x810_wmk.png" alt=""> 
-        <img class="imgfran2" src="../imagenes/entrevista-frankkaster.jpg" alt="">
-    </article>
-
+         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../imagenes/entrevista-frankkaster.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../imagenes/frankkaster_1440x810_wmk.png" class="d-block w-100" alt="...">
+           
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
     </main>
 
     <footer class="footer">  

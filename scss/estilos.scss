@@ -70,86 +70,25 @@ main{
     grid-column-gap: 10px; 
     justify-items: end;
   }
-  .major img{
-    width: 500px;}
-.major iframe{
-    width: 400px;
-    height: 300px;}
-  .img9z{
-    grid-area: img9z;
-   }
- .vid9z{
-  grid-area: vid9z;
-   }
-  .noticia1{ 
-grid-area: noticia1; }
+  
   
   .major{
     background-color: rgb(252, 252, 252);
     border: rgb(161, 104, 161) 1px solid;
-      display: grid;
-      grid-template-columns: 1fr 1fr ;
-      grid-template-rows: 1fr  ;
-      grid-template-areas: "vid9z img9z"
-                            "noticia1 noticia1";
-      grid-row-gap: 10px;
-     grid-column-gap: 10px; 
-     height: 400px;
-     width: 950px; 
-     padding: 1rem
-    
+     
          
    }
-   .luken img{width: 250px;
-               height: 300px;}
-          .noticia2{
-              grid-area: noticia2;
-          }
-          .imgluken1{
-              grid-area: imgluken1 ;
-          }
-          .imgluken2{
-              grid-area: imgluken2;
-          }   
+   
     .luken{
       background-color: rgb(249, 249, 249);
       border: rgb(161, 104, 161) 1px solid;
-      display: grid;
-      grid-template-columns: 1fr 1fr ;
-      grid-template-rows: 1fr ;
-      grid-template-areas: "noticia2 noticia2"
-                            "imgluken1 imgluken2";
-       margin-top: 3rem;
-     grid-row-gap: 10px;
-     grid-column-gap: 10px; 
-     height: 430px;
-     width: 950px;
-     justify-items: center ;
-     padding: 1rem
-     }
-     .imgnqz{
-      width:250px ;
       
-      grid-area: imgnqz;
      }
-     .noticia3{
-      grid-area: noticia3;
-     } 
+    
 
      .nqz{ background-color: rgb(252, 252, 252);
       border: rgb(161, 104, 161) 1px solid;
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr  ;
-        grid-template-areas:"noticia3 "
-                             "imgnqz"
-                            ;
-        grid-row-gap: 10px;
-       grid-column-gap: 10px; 
-       height: 400px;
-       width: 350px; 
-       justify-items: center ;
-       padding: 1rem;
+       
        }
      
       
