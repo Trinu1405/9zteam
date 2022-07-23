@@ -3,7 +3,9 @@ main{
   margin: 5rem;
   margin-top: 1rem;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1em
+  font-size: 1em;
+
+  
 } 
 .menu_link{ 
   text-decoration: none;
@@ -245,7 +247,7 @@ border: rgb(161, 104, 161) 1px solid;
        list-style: none;
        display: flex;
        justify-content: space-around;
-       font-size: 1em;
+       font-size: 0.8em;
       padding: 2rem;}
        
 
@@ -419,4 +421,32 @@ list-style: none;
 display: flex;
 justify-content: space-around;
 }
+}
+/* JUGADORES */
+
+
+.card1{
+  grid-template-areas: card1;
+
+}
+.card2{
+  grid-template-areas: card2;
+}
+.card3{
+  grid-template-areas: card3;
+}
+.card4{
+  grid-template-areas: card4;
+}
+.card5{
+  grid-template-areas: card5;
+}
+
+main{
+  display: grid;
+  grid-template-areas: "card1 card2"
+                        "card3  card4"  
+                         ;}
+.card{
+  border-color: #783F8E ;
 }
