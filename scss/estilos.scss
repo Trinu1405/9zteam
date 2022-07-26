@@ -1,54 +1,33 @@
+@import "variables";
+
 *{
-  margin: 0rem;
-  padding: 0rem;
-  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+
+  body{
+    background-image: url(../imagenes/fondo2.png);
+    background-position: center;
+  background-size: cover;
+  
+  }
   
 }
-body{
-  background-color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
-}
-nav{
-  background-color: rgb(2, 3, 3);
-  display: flex;
-  margin: 1rem;
-  height: 104px;
-  justify-content:space-around;
-  border: rgb(161, 104, 161) 1px solid;
-  
-
-}
-
-
-.menu{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.5em;
+.main1{
+  max-width: 1100px;
   margin: 2rem;
-  display: flex ;
-  list-style: none;
-  justify-content: space-around ; 
-  width: 70vw;
-  align-items: flex-end;
-  
- 
+  margin-top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  grid-column: 3px;
+  color:$font-color}
 
-}
+.menu_link{ 
+  text-decoration: none;
+  color: $font-color;}
 
-  
-   
-main{
-      max-width: 1450px;
-      margin: 5rem;
-      margin-top: 1rem;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 1em
-  } 
-
-  .menu_link{ 
-    text-decoration: none;
-    color: white;}
-
-    .luken{
+  .container{
+    & .luken{
       grid-area: luken;
     }
     .major{
@@ -57,250 +36,343 @@ main{
     .nqz{
       grid-area: nqz;
     }
+  
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "major nqz"
+                         " luken nqz"
+                          "luken victoria";
+  grid-row-gap: 3px;
+  grid-column-gap: 5px; 
+  justify-items: end;
+  } 
 
-  .container{
-   
-    display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr ;
-      grid-template-areas: "major nqz"
-                           " luken nqz"
-                            "luken victoria";
-    grid-row-gap: 5px;
-    grid-column-gap: 10px; 
-    justify-items: end;
-  }
-  
-  
-  .major{
-    background-color: rgb(252, 252, 252);
-    border: rgb(161, 104, 161) 1px solid;
-     
-         
-   }
-   
-    .luken{
-      background-color: rgb(249, 249, 249);
-      border: rgb(161, 104, 161) 1px solid;
-      
+
+
+.major img{
+width: 500px;}
+
+.major iframe{
+width: 400px;
+height: 300px;}
+
+.major{
+  & 
+    .img9z{
+    grid-area: img9z;
+    }
+    .vid9z{
+    grid-area: vid9z;
+    }
+    .noticia1{ 
+    grid-area: noticia1;
+    background-color: $color-texto;
      }
     
+     border: $color-borde;
+    display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr  ;
+  grid-template-areas: "vid9z img9z"
+                        "noticia1 noticia1";
+ grid-row-gap: 10px;
+ grid-column-gap: 10px; 
+ height: 410px;
+ width: 950px; 
+ padding: 1rem
 
-     .nqz{ background-color: rgb(252, 252, 252);
-      border: rgb(161, 104, 161) 1px solid;
-       
-       }
      
-      
-       .victoria:hover 
-       {filter: opacity(.5);} 
-       
-      .victoria{
-        
-        height:380px ;
-        width: 350px;
-        border: rgb(161, 104, 161) 1px solid;
-         }
+}
      
+.luken{
+  & img{width: 250px;
+    height: 300px;}
 
-
-      /* MOBILE */
-
-      @media only screen and (max-width: 480px){
-          .menu{
-              font-family: 'Times New Roman', Times, serif;
-              font-size: 0.8em;
-              margin: 1rem;
-              display: flex ;
-              list-style: none;
-              justify-content: space-around ; 
-              align-items: center;} 
-
-
-
-             .luken{
-                    grid-area: luken;
-                  }
-                  .major{
-                    grid-area: major;
-                  }
-                  .nqz{
-                    grid-area: nqz;
-                  }
-                  .victoria{
-                    width: 205px;
-                    height:270px ;
-                    grid-template-areas: victoria;
-                  }
-            
-                .container{
-                  margin-top: 0%;
-            
-                  display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr ;
-                    grid-template-areas: "major major"
-                                        "victoria nqz"
-                                        "luken luken" }
-       .major img{
-                  width: 180px;}
-              .major iframe{
-                  width: 180px;
-                  height: 110px;
-              }
-              .img9z{
-                  grid-area: img9z;
-              }
-             .vid9z{
-              grid-area: vid9z;
-             }
-             .noticia1{ 
-              grid-area: noticia1; }
-          
-              .major{
-               
-                display:grid;
-              grid-template-columns: 1fr ;
-              grid-template-rows: 50% ;
-               grid-template-areas: 
-                             "img9z vid9z"
-                             "noticia1 noticia1";
-                  grid-row-gap: 5px;
-                  grid-column-gap: 2px;
-                  height: 250px;
-                  width: 425px; 
-              
-              }
-          .luken img{width: 120px;
-                     height: 130px;}
-          .noticia2{
-              grid-area: noticia2;
-          }
-          .imgluken1{
-              grid-area: imgluken1 ;
-          }
-          .imgluken2{
-              grid-area: imgluken2;
-          }   
-
-          .luken{
-              display: grid;
-              grid-template-columns: 1fr ;
-              grid-template-rows: 50%;
-              grid-template-areas:"noticia2 noticia2"
-                                 "imgluken1 imgluken2";
-              
-              height: 300px;
-              width: 425px; 
-              justify-items: left;
-              margin-top: 0rem;
-
-              
-               }
-               .imgnqz{
-                width:140px ;
-                grid-area: imgnqz;
-               }
-               .nqz{
-                height: 270px;
-                width: 200px; 
-                justify-items: center ;
-                padding: 1rem;
-               }
-
-
-
-
-               .footer{    
-                 color: aliceblue;
-                  background-color:black;
-                  text-align: center;
-                  list-style: none;
-                  display: flex;
-                  justify-content: space-around;
-                  font-size: 0.8em;
-                 
-                  
-               }
-          
-       }
-
-       /* INFORMACION */
-
-
-
-
-       @media only screen and (max-width: 480px){
-          .menu{
-              font-family: 'Times New Roman', Times, serif;
-              font-size: 0.8em;
-              margin: 1rem;
-              display: flex ;
-              list-style: none;
-              justify-content: space-around ; 
-              align-items: center;} 
-
-              main{
-                 margin: 2rem;
-                  margin-top: 3rem;
-                  font-family: 'Times New Roman', Times, serif;
-                  font-size: 0.80em; 
-
-                   }
-
-
-    .fran img{
-      width: 150px;
-    }
-
-    .titulo1{
-      grid-area: titulo1;
-    }
-    .titulo2{
-      grid-area: titulo2;
-
-    }
-    .informacion{
-      grid-area: informacion;
-    }
-    .creacion{
-      grid-area: creacion;
-
-    }
-    .imgfran1{
-      grid-area: imgfran1;
-    }
-    .imgfran2{
-      grid-area: imgfran2;
-    }
-    .fran{
-      background-color: rgb(252, 252, 252);
-      border: rgb(161, 104, 161) 1px solid;
-      display: grid;
-      grid-template-areas: "imgfran1 imgfran2";
-      align-items: center; 
-      grid-row-gap: 5px;
-      grid-column-gap: 10px;
-    }
-            
-      }
-                      
-       
-
-      
-       
-
-
-
-  
-  footer{
-  border: rgb(161, 104, 161) 1px solid;
-  color: aliceblue;
-  background-color:black;
-  padding: 2rem;
-  margin: 0.5rem;
-  text-align: center;
-  list-style: none;
+  & .noticia2{
+    grid-area: noticia2;
+    background-color: $color-texto
+ 
+}
+.imgluken1{
+    grid-area: imgluken1 ;
+}
+.imgluken2{
+    grid-area: imgluken2;
+}   
+  border:$color-borde;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: 430px;
+ width: 950px;
+ align-items: center;
+ padding: 1rem
+ }
+
+ .nqz{ 
+  &  .imgnqz{
+    width:250px ;
+    
+    grid-area: imgnqz;
+   }
+   .noticia3{
+    grid-area: noticia3;
+    background-color: $color-texto
+   } 
+  border: $color-borde;
+    display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  
+   }
+ 
+   .victoria{
+    
+    height:380px ;
+    width: 350px;
+    border: $color-borde;
+    &:hover{filter: opacity(.5);}
+     }
+ 
+     footer{
+      border:$color-borde;
+      background-color:$color-footer;
+      padding: 2rem;
+      margin: 0.5rem;
+      text-align: center;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      }
+   
+    
+    .carousel-inner{
+     height: 500px;
+     width: 700px;
+     & img {
+      width : 50%;
+       max-height: 500px;
+      }
+    }
+    
+
+  /* MOBILE */
+
+  @media only screen and (max-width: 480px){
+               .victoria{
+                width: 205px;
+                height:270px ;
+                grid-template-areas: victoria;
+              }
+        
+            .container{
+              &  .luken{
+                grid-area: luken;
+              }
+              .major{
+                grid-area: major;
+              }
+              .nqz{
+                grid-area: nqz;
+              }
+               display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr ;
+                grid-template-areas: "major major"
+                                    "victoria nqz"
+                                    "luken luken"; 
+                align-items: center;                  }
+   .major img{
+              width: 200px;
+            height: 180px;}
+          .major iframe{
+              width: 180px;
+              height: 180px;
+          }
+        
+ .major{
+   & .img9z{
+   grid-area: img9z;
+     }
+   .vid9z{
+    grid-area: vid9z;
+       }
+  .noticia1{grid-area: noticia1; }
+     display:grid;
+   grid-template-columns: 1fr ;
+     grid-template-rows: 50% ;
+       grid-template-areas: 
+                         "img9z vid9z"
+                         "noticia1 noticia1";
+       grid-row-gap: 1px;
+      grid-column-gap: 1px;
+      width: 425px; 
+      font-size: 1.1em;
+           }
+      .luken img{width: 120px;
+                 height: 130px;}
+     .luken{
+         display: flex;
+  justify-content: space-between;
+      align-items: center;
+      height: 340px;
+      width: 425px; 
+      justify-items: left;
+       margin-top: 0.3rem;
+       padding: 1rem;
+       font-size: 0.8em;
+  }
+   .nqz{
+&  .imgnqz{
+  width:110px;
+  height: 110px;
+  grid-area: imgnqz;
+   }
+  height: 270px;
+  width: 200px; 
+   justify-items: center ;
+  padding: 1rem;
+    }
+  
+   .footer{    
+     background-color:$color-footer;
+     text-align: center;
+     list-style: none;
+      display: flex;
+     justify-content: space-around;
+    font-size: 0.8em;}
+
+           }
+     /* TABLET */
+     @media only screen and (max-width: 768px){
+     
+     
+      }
+     
+     
+ 
+       
+  
+   /* INFORMACION */
+
+
+
+
+   @media only screen and (max-width: 480px){
+      .menu{
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 0.8em;
+          margin: 1rem;
+          display: flex ;
+          list-style: none;
+          justify-content: space-around ; 
+          align-items: center;} 
+
+          main{
+             margin: 2rem;
+              margin-top: 3rem;
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 0.80em; }
+
+
+
+.titulo1{
+  grid-area: titulo1;
+}
+.titulo2{
+  grid-area: titulo2;
+
+}
+.informacion{
+  grid-area: informacion;
+}
+.creacion{
+  grid-area: creacion;
+
+}
+.imgfran1{
+  grid-area: imgfran1;
+  
+}
+.imgfran2{
+  grid-area: imgfran2;
+}
+.fran{
+  background-color:$font-color;
+  border:$color-borde solid;
+  display: grid;
+  grid-template-areas: "imgfran1 imgfran2";
+  align-items: center; 
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+}
+        
+.carousel-inner{
+height: 500px;
+width: 400px;
+& img {
+  width : 50%;
+   max-height: 500px;
+}
+}
+                  
+footer{
+border: $color-borde;
+background-color:black;
+padding: 2rem;
+margin: 0.5rem;
+text-align: center;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+}
+/* JUGADORES */
+
+.info{ 
+  max-width: 1200px;
+  margin: 5rem;
+  margin-top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  
+}
+
+main{
+  & .card1{
+    grid-template-areas: card1;
+  
+  }
+  .card2{
+    grid-template-areas: card2;
+  }
+  .card3{
+    grid-template-areas: card3;
+  }
+  .card4{
+    grid-template-areas: card4;
+  }
+  .card5{
+    grid-template-areas: card5;
+  }
+  
+  display: grid;
+  grid-template-areas: "card1 card2"
+                        "card3  card4"  
+                         ;
+                         grid-row-gap: 7px;
+                         grid-column-gap: 40px;;                       }
+                     
+.card{
+  border-color: #783F8E ;
+}
+.redes{
+  max-width: 1200px;
+  margin: 5rem;
+  margin-top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: $font-color;
 }
