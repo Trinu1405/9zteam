@@ -1,3 +1,74 @@
+.carousel-inner {
+  height: 500px;
+  width: 700px; }
+  .carousel-inner img {
+    width: 50%;
+    max-height: 500px; }
+
+@media only screen and (max-width: 480px) {
+  main {
+    background-color: black;
+    font-size: 0.9em; }
+  .carousel-inner {
+    height: 500px;
+    width: 400px; }
+    .carousel-inner img {
+      width: 50%;
+      max-height: 500px; } }
+
+.info {
+  max-width: 1200px;
+  margin: 5rem;
+  margin-top: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  display: grid;
+  grid-template-areas: "card1 card2" "card3  card4";
+  grid-row-gap: 7px;
+  grid-column-gap: 40px; }
+  .info .card1 {
+    grid-template-areas: card1; }
+  .info .card2 {
+    grid-template-areas: card2; }
+  .info .card3 {
+    grid-template-areas: card3; }
+  .info .card4 {
+    grid-template-areas: card4; }
+  .info .card5 {
+    grid-template-areas: card5; }
+
+.card {
+  border-color: #783F8E; }
+
+@media only screen and (max-width: 480px) {
+  .info {
+    display: grid;
+    grid-template-areas: "card1 " "card2" "card3" "card4"; }
+    .info .card1 {
+      grid-template-areas: card1; }
+    .info .card2 {
+      grid-template-areas: card2; }
+    .info .card3 {
+      grid-template-areas: card3; }
+    .info .card4 {
+      grid-template-areas: card4; }
+    .info .card5 {
+      grid-template-areas: card5; } }
+
+footer {
+  border: #783F8E solid;
+  background-color: black;
+  padding: 2rem;
+  margin: 0.5rem;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    font-size: 0.9em; } }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -5,14 +76,19 @@
     background-image: url(../imagenes/fondo2.png);
     background-position: center;
     background-size: cover; }
+  * .tituloprincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1100px;
+    margin: 1rem; }
 
-.main1 {
+.main1, .redes {
   max-width: 1100px;
   margin: 2rem;
   margin-top: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1em;
-  grid-column: 3px;
   color: aliceblue; }
 
 .menu_link {
@@ -35,11 +111,12 @@
     grid-area: nqz; }
 
 .major img {
-  width: 500px; }
+  height: 250px;
+  width: 450px; }
 
 .major iframe {
-  width: 400px;
-  height: 300px; }
+  height: 250px;
+  width: 450px; }
 
 .major {
   border: #783F8E solid;
@@ -94,34 +171,17 @@
     background-color: black; }
 
 .victoria {
-  height: 380px;
-  width: 350px;
+  height: 350px;
+  width: 380px;
   border: #783F8E solid; }
   .victoria:hover {
     filter: opacity(0.5); }
 
-footer {
-  border: #783F8E solid;
-  background-color: black;
-  padding: 2rem;
-  margin: 0.5rem;
-  text-align: center;
-  list-style: none;
-  display: flex;
-  justify-content: space-around; }
-
-.carousel-inner {
-  height: 500px;
-  width: 700px; }
-  .carousel-inner img {
-    width: 50%;
-    max-height: 500px; }
-
 /* MOBILE */
 @media only screen and (max-width: 480px) {
   .victoria {
-    width: 205px;
     height: 270px;
+    width: 205px;
     grid-template-areas: victoria; }
   .container {
     display: grid;
@@ -136,139 +196,29 @@ footer {
     .container .nqz {
       grid-area: nqz; }
   .major img {
-    width: 200px;
-    height: 180px; }
+    height: 200px;
+    width: 180px; }
   .major iframe {
-    width: 180px;
-    height: 180px; }
+    height: 200px;
+    width: 180px; }
   .major {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50%;
-    grid-template-areas: "img9z vid9z" "noticia1 noticia1";
-    grid-row-gap: 1px;
-    grid-column-gap: 1px;
     width: 425px;
-    font-size: 1.1em; }
-    .major .img9z {
-      grid-area: img9z; }
-    .major .vid9z {
-      grid-area: vid9z; }
-    .major .noticia1 {
-      grid-area: noticia1; }
+    font-size: 1em; }
   .luken img {
-    width: 120px;
-    height: 130px; }
+    height: 130px;
+    width: 120px; }
   .luken {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 340px;
     width: 425px;
-    justify-items: left;
     margin-top: 0.3rem;
     padding: 1rem;
-    font-size: 0.8em; }
+    font-size: 0.9em; }
   .nqz {
     height: 270px;
     width: 200px;
     justify-items: center;
     padding: 1rem; }
     .nqz .imgnqz {
-      width: 110px;
       height: 110px;
-      grid-area: imgnqz; }
-  .footer {
-    background-color: black;
-    text-align: center;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 0.8em; } }
-
-/* TABLET */
-/* INFORMACION */
-@media only screen and (max-width: 480px) {
-  .menu {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.8em;
-    margin: 1rem;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center; }
-  main {
-    margin: 2rem;
-    margin-top: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.80em; }
-  .titulo1 {
-    grid-area: titulo1; }
-  .titulo2 {
-    grid-area: titulo2; }
-  .informacion {
-    grid-area: informacion; }
-  .creacion {
-    grid-area: creacion; }
-  .imgfran1 {
-    grid-area: imgfran1; }
-  .imgfran2 {
-    grid-area: imgfran2; }
-  .fran {
-    background-color: aliceblue;
-    border: #783F8E solid solid;
-    display: grid;
-    grid-template-areas: "imgfran1 imgfran2";
-    align-items: center;
-    grid-row-gap: 5px;
-    grid-column-gap: 10px; }
-  .carousel-inner {
-    height: 500px;
-    width: 400px; }
-    .carousel-inner img {
-      width: 50%;
-      max-height: 500px; }
-  footer {
-    border: #783F8E solid;
-    background-color: black;
-    padding: 2rem;
-    margin: 0.5rem;
-    text-align: center;
-    list-style: none;
-    display: flex;
-    justify-content: space-around; } }
-
-/* JUGADORES */
-.info {
-  max-width: 1200px;
-  margin: 5rem;
-  margin-top: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1em; }
-
-main {
-  display: grid;
-  grid-template-areas: "card1 card2" "card3  card4";
-  grid-row-gap: 7px;
-  grid-column-gap: 40px; }
-  main .card1 {
-    grid-template-areas: card1; }
-  main .card2 {
-    grid-template-areas: card2; }
-  main .card3 {
-    grid-template-areas: card3; }
-  main .card4 {
-    grid-template-areas: card4; }
-  main .card5 {
-    grid-template-areas: card5; }
-
-.card {
-  border-color: #783F8E; }
-
-.redes {
-  max-width: 1200px;
-  margin: 5rem;
-  margin-top: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1em;
-  color: aliceblue; }
+      width: 110px;
+      grid-area: imgnqz; } }

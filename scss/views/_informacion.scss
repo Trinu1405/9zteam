@@ -1,0 +1,29 @@
+
+@mixin sizes( $widht, $height) {
+    height: $height;
+    width: $widht;
+  }
+
+.carousel-inner{
+  @include sizes (700px,500px);
+    & img {
+     width : 50%;
+      max-height: 500px;
+     }
+   }
+   
+@media only screen and (max-width: 480px){
+    main{ 
+        background-color:$color-texto;
+        font-size: $font-small; } 
+
+        
+    .carousel-inner{
+        @include sizes (400px,500px);
+        & img {
+         width : 50%;
+          max-height: 500px;
+         }
+       }
+       
+}

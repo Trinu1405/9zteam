@@ -1,0 +1,61 @@
+.info{ 
+    max-width: 1200px;
+    margin: 5rem;
+    margin-top: 1rem;
+    font-family: $font;
+    font-size: $size;
+    & .card1{
+        grid-template-areas: card1;
+      
+      }
+      .card2{
+        grid-template-areas: card2;
+      }
+      .card3{
+        grid-template-areas: card3;
+      }
+      .card4{
+        grid-template-areas: card4;
+      }
+      .card5{
+        grid-template-areas: card5;
+      }
+      
+      display: grid;
+      grid-template-areas: "card1 card2"
+                            "card3  card4"  
+                             ;
+                             grid-row-gap: 7px;
+                             grid-column-gap: 40px;;                       }
+                         
+    .card{
+      border-color: #783F8E ;
+    }
+    
+    
+    @media only screen and (max-width: 480px){
+        .info{
+            .card1{
+                grid-template-areas: card1;
+              
+              }
+              .card2{
+                grid-template-areas: card2;
+              }
+              .card3{
+                grid-template-areas: card3;
+              }
+              .card4{
+                grid-template-areas: card4;
+              }
+              .card5{
+                grid-template-areas: card5;
+              }
+              
+              display: grid;
+              grid-template-areas: "card1 "
+                                    "card2"
+                                    "card3"
+                                    "card4"
+        }
+    }
