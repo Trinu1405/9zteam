@@ -1,3 +1,34 @@
 .redes{
-    @extend .main1
+    display: flex;
+    justify-content: space-between;
+    margin: 8.5rem;
+    
+}
+.tituloredes{
+  color: $font-color;
+  margin-left:7rem ;
+  font-family: $font;
+}
+ 
+@mixin sizes( $widht, $height) {
+        height: $height;
+        width: $widht;}
+ 
+ .redesimg{ @include sizes (350px,350px)}  
+
+ /* MOBILE */
+
+ @media only screen and (max-width: 480px){
+  .redes{
+    display: flex;
+    align-items: center;
+    flex-direction: column
+  }
+  .tituloredes{
+    margin-left: 0rem;
+  }
+    .redesimg{
+        @include sizes (100px,100px)
+
     }
+ }

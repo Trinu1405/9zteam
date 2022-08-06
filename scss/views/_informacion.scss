@@ -1,5 +1,13 @@
 
+.articulofran{
+  margin: 1rem;
+}
+
+
+
+
 @mixin sizes( $widht, $height) {
+
     height: $height;
     width: $widht;
   }

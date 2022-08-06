@@ -18,22 +18,20 @@
   background-size: cover;
   
   }
-  .tituloprincipal{
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    max-width: 1100px;
-    margin: 1rem;
-    
+  
+  li{
+    padding-left:20px;
+    padding-right:20px;
   }
 }
 .main1{
-  max-width: 1100px;
-  margin: 2rem;
+
   margin-top: 1rem;
   font-family: $font;
   font-size: $size;
-   color:$font-color}
+   color:$font-color;
+  align-items: center;}
+
 
 .menu_link{ 
   text-decoration: none;
@@ -154,7 +152,7 @@
 
   @media only screen and (max-width: 480px){
                .victoria{
-                @include sizes(205px,270px );
+                @include sizes(195px,270px );
                 grid-template-areas: victoria;
               }
         
