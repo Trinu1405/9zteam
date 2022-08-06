@@ -209,7 +209,7 @@ footer {
     width: 195px;
     grid-template-areas: victoria; }
   .container {
-    margin-left: -1rem;
+    margin-left: -0.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
