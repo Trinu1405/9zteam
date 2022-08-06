@@ -87,8 +87,8 @@
 footer {
   border: #783F8E solid;
   background-color: black;
-  padding: 2rem;
-  margin: 0.5rem;
+  padding: 1rem;
+  margin: 0.2rem;
   text-align: center;
   list-style: none;
   display: flex;
@@ -209,6 +209,7 @@ footer {
     width: 195px;
     grid-template-areas: victoria; }
   .container {
+    margin-left: -1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
