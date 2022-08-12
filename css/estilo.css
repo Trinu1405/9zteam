@@ -1,3 +1,26 @@
+.highlights {
+  margin-top: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: aliceblue; }
+
+.titulohigh {
+  display: flex;
+  justify-content: center;
+  font-weight: 800; }
+
+.high1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  flex-wrap: wrap; }
+
+.high2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  flex-wrap: wrap; }
+
 .articulofran {
   margin: 1rem; }
 

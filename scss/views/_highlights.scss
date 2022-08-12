@@ -1,0 +1,27 @@
+
+.highlights{
+  margin-top: 1rem;
+  font-family: $font;
+  font-size: $size;
+   color:$font-color;
+ }
+.titulohigh{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+
+}
+.high1{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    flex-wrap: wrap;
+     
+}
+.high2{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem; 
+    flex-wrap: wrap;
+
+}
