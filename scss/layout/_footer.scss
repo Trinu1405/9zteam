@@ -1,4 +1,5 @@
 footer{
+  color:$font-color;
     border:$color-borde;
     background-color:$color-footer;
     padding: 1rem;
@@ -7,12 +8,14 @@ footer{
     list-style: none;
     display: flex;
     justify-content: space-around;
-   
     }
+    .menu_flink{
+      color: $font-color;}
+    
 
     @media only screen and (max-width: 480px){
       .footer{ font-size: $font-small;
-      justify-content: space-between;
+    
       
       
       

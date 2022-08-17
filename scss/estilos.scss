@@ -38,27 +38,19 @@
   color: $font-color;}
 
   .container{
-    & .luken{
-      grid-area: luken;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     }
-    .major{
-      grid-area: major;
-    }
-    .nqz{
-      grid-area: nqz;
-    }
-  
-  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
-    grid-template-areas: "major nqz"
-                         " luken nqz"
-                          "luken victoria";
-  grid-row-gap: 3px;
-  grid-column-gap: 5px; 
-  justify-items: end;
-  } 
+.lukenymajor{
+  display: flex;
+ flex-direction: column;
+}
+.nqzyvictoria{
+  display: flex;
+  flex-direction: column;
 
+}
 
 
   @mixin sizes( $widht, $height) {
@@ -129,7 +121,7 @@
     grid-area: imgnqz;
    }
    .noticia3{
-    grid-area: noticia3;
+    
     background-color: $color-texto
    } 
   border: $color-borde;
@@ -143,7 +135,7 @@
  
    .victoria{
     
-    @include sizes(380px,350px );
+    @include sizes(380px,370px );
     border: $color-borde;
     &:hover{filter: opacity(.5);}
      }
@@ -152,28 +144,14 @@
 
   @media only screen and (max-width: 480px){
               
-        
-            .container{
-              
-              margin-left: -0.6rem;
-              
-              &  .luken{
-                grid-area: luken;
-              }
-              .major{
-                grid-area: major;
-              }
-              .nqz{
-                grid-area: nqz;
-              }
-               display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr ;
-                grid-template-areas: "major major"
-                                    "victoria nqz"
-                                    "luken luken"; 
-   align-items: center;  }
-          
+       .container{
+        display: flex;
+        flex-direction: column;
+       }
+       .nqzyvictoria{
+        display: flex;
+        flex-direction:row ;
+       }
    
    
    @mixin sizes( $widht, $height) {
@@ -202,12 +180,12 @@
   & .imgnqz{
   @include sizes(100px,110px );
   grid-area: imgnqz;}
-  @include sizes(165px,285px );
+  @include sizes(165px,245px );
    justify-items: center ;
   padding: 1rem;
 font-size: $font-small;}
 .victoria{
-  @include sizes(175px,285px )
+  @include sizes(175px,245px )
 }
 
 }

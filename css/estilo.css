@@ -108,6 +108,7 @@
     width: 100px; } }
 
 footer {
+  color: aliceblue;
   border: #783F8E solid;
   background-color: black;
   padding: 1rem;
@@ -117,10 +118,12 @@ footer {
   display: flex;
   justify-content: space-around; }
 
+.menu_flink {
+  color: aliceblue; }
+
 @media only screen and (max-width: 480px) {
   .footer {
-    font-size: 0.7em;
-    justify-content: space-between; } }
+    font-size: 0.7em; } }
 
 * {
   margin: 0px;
@@ -145,19 +148,17 @@ footer {
   color: aliceblue; }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "major nqz" " luken nqz" "luken victoria";
-  grid-row-gap: 3px;
-  grid-column-gap: 5px;
-  justify-items: end; }
-  .container .luken {
-    grid-area: luken; }
-  .container .major {
-    grid-area: major; }
-  .container .nqz {
-    grid-area: nqz; }
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.lukenymajor {
+  display: flex;
+  flex-direction: column; }
+
+.nqzyvictoria {
+  display: flex;
+  flex-direction: column; }
 
 .major img {
   height: 250px;
@@ -216,11 +217,10 @@ footer {
     width: 250px;
     grid-area: imgnqz; }
   .nqz .noticia3 {
-    grid-area: noticia3;
     background-color: black; }
 
 .victoria {
-  height: 350px;
+  height: 370px;
   width: 380px;
   border: #783F8E solid; }
   .victoria:hover {
@@ -229,18 +229,11 @@ footer {
 /* MOBILE */
 @media only screen and (max-width: 480px) {
   .container {
-    margin-left: -0.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "major major" "victoria nqz" "luken luken";
-    align-items: center; }
-    .container .luken {
-      grid-area: luken; }
-    .container .major {
-      grid-area: major; }
-    .container .nqz {
-      grid-area: nqz; }
+    display: flex;
+    flex-direction: column; }
+  .nqzyvictoria {
+    display: flex;
+    flex-direction: row; }
   .major img {
     height: 150px;
     width: 150px; }
@@ -260,7 +253,7 @@ footer {
     padding: 1rem;
     font-size: 0.7em; }
   .nqz {
-    height: 285px;
+    height: 245px;
     width: 165px;
     justify-items: center;
     padding: 1rem;
@@ -270,5 +263,5 @@ footer {
       width: 100px;
       grid-area: imgnqz; }
   .victoria {
-    height: 285px;
+    height: 245px;
     width: 175px; } }
