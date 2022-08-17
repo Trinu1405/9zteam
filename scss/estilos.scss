@@ -139,7 +139,58 @@
     border: $color-borde;
     &:hover{filter: opacity(.5);}
      }
+ /* TABLET */
+     @media only screen and (max-width: 768px){
  
+            
+      .container{
+        display: flex;
+        flex-direction: column;
+       }
+       .nqzyvictoria{
+        display: flex;
+        flex-direction:row ;
+       }
+    
+    
+    @mixin sizes( $widht, $height) {
+    height: $height;
+    width: $widht; }
+    
+    .major img{@include sizes(340px,250px )}
+           
+    .major iframe{ @include sizes(340px,270px ) }
+        
+    .major{
+    
+    width: 760px;
+    font-size: $size; }
+    
+    .luken img{@include sizes(220px,230px )}
+    
+    .luken{
+    height: 300px;
+    width: 760px; 
+    margin-top: 0.3rem;
+    padding: 1rem;
+    
+    }
+    .nqz{
+    & .imgnqz{
+    @include sizes(200px,230px );
+    }
+    @include sizes(365px,370px );
+    justify-items: center ;
+    padding: 1rem;
+    ;}
+    
+    
+    }
+
+
+
+
+
  /* MOBILE */
 
   @media only screen and (max-width: 480px){
@@ -191,8 +242,6 @@ font-size: $font-small;}
 }
 
    
-   
-
 
       
     

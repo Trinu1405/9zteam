@@ -31,9 +31,39 @@
     .card{
       border-color: #783F8E ;
     }
+/* TABLET */
+@media only screen and (max-width: 768px){
+  .info{
+    .card1{
+        grid-template-areas: card1;
+      
+      }
+      .card2{
+        grid-template-areas: card2;
+      }
+      .card3{
+        grid-template-areas: card3;
+      }
+      .card4{
+        grid-template-areas: card4;
+      }
+      .card5{
+        grid-template-areas: card5;
+      }
+      
+      display: grid;
+      grid-template-areas: "card1 "
+                            "card2"
+                            "card3"
+                            "card4"
+}
+}
+
+
     
+    /* MOBILE */
     
-    @media only screen and (max-width: 480px){
+   @media only screen and (max-width: 480px){
         .info{
             .card1{
                 grid-template-areas: card1;
@@ -59,3 +89,5 @@
                                     "card4"
         }
     }
+
+   

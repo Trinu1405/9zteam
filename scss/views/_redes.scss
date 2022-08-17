@@ -16,6 +16,16 @@
  
  .redesimg{ @include sizes (350px,350px)}  
 
+/* TABLET */
+ @media only screen and (max-width: 768px){
+  .tituloredes{
+    margin-left: 3rem;
+  }
+.redesimg{
+  @include sizes (200px,200px)
+}
+ }
+
  /* MOBILE */
 
  @media only screen and (max-width: 480px){
@@ -32,3 +42,4 @@
 
     }
  }
+
