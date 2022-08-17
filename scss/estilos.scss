@@ -151,12 +151,10 @@
  /* MOBILE */
 
   @media only screen and (max-width: 480px){
-               .victoria{
-                @include sizes(195px,270px );
-                grid-template-areas: victoria;
-              }
+              
         
             .container{
+              
               margin-left: -0.6rem;
               
               &  .luken{
@@ -182,30 +180,37 @@
     height: $height;
     width: $widht; }
    
-.major img{@include sizes(180px,200px )}
+.major img{@include sizes(150px,150px )}
            
-  .major iframe{ @include sizes(180px,200px ) }
+  .major iframe{ @include sizes(150px,170px ) }
         
  .major{
-  width: 425px; 
+
+  width: 375px;
   font-size: $size; }
   
   .luken img{@include sizes(120px,130px )}
     
   .luken{
-   height: 340px;
-  width: 425px; 
+   height: 300px;
+  width: 375px; 
    margin-top: 0.3rem;
   padding: 1rem;
-  font-size:$font-small;
+  font-size:$font-small ;
   }
 .nqz{
   & .imgnqz{
-  @include sizes(110px,110px );
+  @include sizes(100px,110px );
   grid-area: imgnqz;}
-  @include sizes(200px,270px );
+  @include sizes(165px,285px );
    justify-items: center ;
-  padding: 1rem;} }
+  padding: 1rem;
+font-size: $font-small;}
+.victoria{
+  @include sizes(175px,285px )
+}
+
+}
 
    
    

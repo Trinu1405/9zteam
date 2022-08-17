@@ -7,11 +7,12 @@ footer{
     list-style: none;
     display: flex;
     justify-content: space-around;
+   
     }
 
     @media only screen and (max-width: 480px){
       .footer{ font-size: $font-small;
-            
+      justify-content: space-between;
       
       
       
