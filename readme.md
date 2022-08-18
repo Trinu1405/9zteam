@@ -1,3 +1,3 @@
-<h1> 9z team </h1>
+<h1> 9z Team </h1>
 
-<p> repositorio sobre el equipo de esports 9z team</p>
+<p> Repositorio sobre el equipo Argentino de esports 9z Team</p>
