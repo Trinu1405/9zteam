@@ -38,6 +38,7 @@
   color: $font-color;}
 
   .container{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,7 +163,6 @@
     .major iframe{ @include sizes(340px,270px ) }
         
     .major{
-    
     width: 760px;
     font-size: $size; }
     
@@ -183,15 +183,9 @@
     justify-items: center ;
     padding: 1rem;
     ;}
-    
-    
-    }
+     }
 
-
-
-
-
- /* MOBILE */
+/* MOBILE */
 
   @media only screen and (max-width: 480px){
               
